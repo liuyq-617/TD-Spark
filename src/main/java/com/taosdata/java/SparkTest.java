@@ -9,8 +9,8 @@ import org.apache.spark.sql.jdbc.JdbcDialects;
 public class  SparkTest{
     public static void main(String[] args) {
 		// 数据库配置
-		String url = "jdbc:TAOS://u05:6030/tt?user=root&password=taosdata";
-		String driver = "com.taosdata.jdbc.rs.TSDBDriver";
+		String url = "jdbc:TAOS-RS://u05:6041/tt?user=root&password=taosdata";
+		String driver = "com.taosdata.jdbc.rs.RestfulDriver";
         String dbtable = "t1";
 		
 		SparkSession sparkSession = SparkSession.builder()
